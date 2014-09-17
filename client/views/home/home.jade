@@ -1,5 +1,7 @@
 h3 Home
 
+div(ng-repeat='title in titles', mf-movie, title='{{title}}')
+
 div(ng-repeat='zip in zips', mf-weather, zip='{{zip}}')
 
 div(ng-repeat='symbol in symbols', mf-stock, symbol='{{symbol}}')

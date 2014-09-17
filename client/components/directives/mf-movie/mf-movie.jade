@@ -1,0 +1,14 @@
+h4 {{title}}
+img(ng-src='{{movie.poster}}')
+dl.dl-horizontal
+  dt Basic Info
+  dd Year:&nbsp; {{movie.year}}
+  dd Rating:&nbsp; {{movie.mpaa_rating}}
+  dd Runtime:&nbsp; {{movie.runtime}}&nbsp; minutes
+  br
+  dt Ratings
+  dd Critics Rating:&nbsp; {{movie.ratings.critics_rating}} ({{movie.ratings.critics_score}})
+  dd Audience Rating:&nbsp; {{movie.ratings.audience_rating}} ({{movie.ratings.audience_score}})
+  br
+  dt Starring
+  dd(ng-repeat='cast in movie.abridged_cast') {{cast.name}}, as {{cast.characters}}
