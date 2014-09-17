@@ -1,5 +1,7 @@
 h3 Home
 
+div(ng-repeat='symbol in symbols', mf-stock, symbol='{{symbol}}')
+
 div(ng-repeat='person in people', mf-greeting, name='{{person.name}}', age='{{person.age}}')
 
 div(mf-clock, frequency='2000')

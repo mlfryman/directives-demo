@@ -11,6 +11,7 @@ html(ng-app='directives-demo', lang='en')
     link(href='/index.css', rel='stylesheet')
     link(href='/components/directives/mf-greeting/mf-greeting.css', rel='stylesheet')
     link(href='/components/directives/mf-clock/mf-clock.css', rel='stylesheet')
+    link(href='/components/directives/mf-stock/mf-stock.css', rel='stylesheet')
   body
     include nav
     .container
@@ -23,6 +24,8 @@ html(ng-app='directives-demo', lang='en')
     script(src='/vendor/angular-route/angular-route.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.js')
     script(src='/vendor/underscore/underscore.js')
+    script(src='/vendor/moment/moment.js')
+    script(src='/vendor/moment-timezone/moment-timezone.js')
     script(src='/vendor/toastr/toastr.js')
     script(src='/vendor/localforage/dist/localforage.js')
     script(src='/vendor/angular-localforage/dist/angular-localForage.js')
@@ -38,4 +41,5 @@ html(ng-app='directives-demo', lang='en')
     script(src='/components/factories/http-interceptor.js')
     script(src='/components/directives/mf-greeting/mf-greeting.js')
     script(src='/components/directives/mf-clock/mf-clock.js')
+    script(src='/components/directives/mf-stock/mf-stock.js')
 
