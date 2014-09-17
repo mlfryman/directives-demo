@@ -1,3 +1,9 @@
 h3 Home
 
-div(ng-repeat='person in people', ml-greeting, name='{{person.name}}', age='{{person.age}}')
+div(ng-repeat='person in people', mf-greeting, name='{{person.name}}', age='{{person.age}}')
+
+div(mf-clock, frequency='2000')
+div(mf-clock, frequency='1000')
+div(mf-clock, frequency='500')
+div(mf-clock, frequency='250')
+div(mf-clock, frequency='10')
