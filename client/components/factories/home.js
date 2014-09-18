@@ -3,7 +3,5 @@
 
   angular.module('directives-demo')
   .factory('Home', ['$http', function($http){
-
   }]);
 })();
-
