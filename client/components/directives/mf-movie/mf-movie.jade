@@ -1,5 +1,5 @@
+img(ng-src='{{poster}}')
 h4 {{title}}
-img(ng-src='{{movie.poster}}')
 dl.dl-horizontal
   dt Basic Info
   dd Year:&nbsp; {{movie.year}}
@@ -12,3 +12,4 @@ dl.dl-horizontal
   br
   dt Starring
   dd(ng-repeat='cast in movie.abridged_cast') {{cast.name}}, as {{cast.characters}}
+button.btn.btn-danger.btn-sm(ng-click='remove()') x

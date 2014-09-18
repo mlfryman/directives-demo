@@ -16,7 +16,7 @@
 
     o.restrict = 'A';
     o.templateUrl = '/components/directives/mf-movie/mf-movie.html';
-    o.scope = {title:'@'};
+    o.scope = {title:'@', remove:'&'};
     o.link = function(scope, element, attrs){
              };
     o.controller  = ['$scope', 'MovieApi', function($scope, MovieApi){
