@@ -27,7 +27,7 @@ module.exports = function(app, express){
   app.post('/login', users.login);
   app.post('/movies', titles.create);
   app.get('/movies', titles.index);
-  app.delete('/movies/:id', titles.destroy);
+  app.delete('/movies/title', titles.destroy);
 
   app.use(security.bounce);
   app.delete('/logout', users.logout);
