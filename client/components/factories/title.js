@@ -9,7 +9,7 @@
     }
 
     function create(title){
-      return $http.post('/movies', title);
+      return $http.post('/movies', {title:title});
     }
 
     function destroy(index){

@@ -29,13 +29,14 @@
              };
 
     // controller functions run 1st
-    o.controller = ['$scope', 'LocationService', function($scope, LocationService){
+    o.controller = ['$scope', 'LocationService', '$rootScope', function($scope, LocationService, $rootScope){
                       $scope.findMe = function(){
                         // alert('I found you!');
                         LocationService.locate().then(success, error);
                       };
 
                       function success(pos){
+                        $rootScope.$broadcast('position', pos);
                         console.log(pos);
                       }
 
